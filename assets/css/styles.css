@@ -1,38 +1,35 @@
-*,
-*::after,
-*::before {
-  margin: 0;
+/* This file contains generalized styles for app components */
+
+.style-navbar {
+  margin-left: 4rem;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  background-color: #000;
-  color: #fff;
+.style_resume_header {
+  padding: 2rem 2rem 2rem 4rem;
+  font-family: Georgia;
+  color: lightgray;
+  background-image: linear-gradient(#147259, #022a26);
 }
 
-header {
-  background-color: #fff;
-  color: #000;
+.row-offset {
+  margin-left: 2rem;
+  padding-left: 2rem;
+  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
-main {
-  background-color: #fff;
-  color: #000;
-}
-
-footer {
-  background-color: #fff;
-  color: #000;
-}
-
+/* CV wrapper */
 .cv-wrapper {
   margin: 0 auto;
   padding: 2rem;
   max-width: 800px;
 }
 
-/* This file contains generalized styles for app components */
+.remove-mp-left {
+  margin-left: 0px;
+  padding-left: 0px;
+}
 
 /* Button component */
 .style_skills_button {
@@ -55,14 +52,6 @@ footer {
   font-size: 24px;
   color: #ffffff;
   font-weight: 600;
-}
-
-.style_resume_header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-family: Georgia;
-  color: lightgray;
-  background-image: linear-gradient(#147259, #022a26);
 }
 
 /* Accordion component */

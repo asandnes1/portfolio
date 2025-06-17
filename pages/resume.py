@@ -21,10 +21,11 @@ def layout(): return\
                 dcc.Markdown(
                     '''
                         #### __Andreas Sandnes__
-
-                        ##### Bioinformatics | Data Science | Data Analysis | Visualization | HPC |
-                        ##### Software Development | Git | Python | Dash Plotly | R | Seurat | Bash | SQL | HTML | CSS | Dashboards |
-                    ''', style={'margin-top':'2rem'}, className='font-family-default',
+                        
+                        ##### ***It would be pretty cool to combine bioinformatics with software development to create tools for researchers.***
+                        
+                        ###### Bioinformatics | Data Science | Data Analysis: Bulk RNA-seq; Single-cell RNA-seq; DNA Encoded Chemical Libraries | HPC | Bash | R | Seurat | Data Visualization | Software Development | Git | Python | Dash Plotly | SQL | HTML | CSS | Dashboard Development
+                    ''', className='font-family-default',
                 ),
             ])
         ], className='style_resume_header'),
@@ -40,30 +41,29 @@ def layout(): return\
                     ], title="CV Onepager"),
                     # Add option to download CV
                     dcc.Download(id="download-cv"),
-                    dbc.Button("Download CV", id="btn-download-cv", color="primary", className="mt-3"),
+                    dbc.Button("Download CV", id="btn-download-cv", color="primary", class_name="mt-3"),
                 ], start_collapsed=True),
-            ]),
-        ], class_name='mt-3'),
+            ], class_name='remove-mp-left'),
+        ], class_name='row-offset', style={'margin-bottom':'4rem'}),
+        html.Hr(),
 
-        # dbc.Row([  # Profile text
-        #     dbc.Col([
-        #         dcc.Markdown(
-        #         '''
-        #             #### Profile    
-        #         ''', style={'color':'gray'}, className='font-family-default',
-        #         ),
-        #         dcc.Markdown(
-        #             '''
-        #                 ######  Guided by curiosity, I have obtained experience in drug discovery research\
-        #                 and software development building digital solutions for scientists. This ignited a passion\
-        #                 for developing software tools! Through data-driven analysis, teamwork, and well-documented\
-        #                 implementation and optimization, any problem becomes an inspiring story of facing challenges\
-        #                 and overcoming obstacles. From idea to deployment, I am looking to grow from such stories! 
-        #             ''', style={'color':'lightgray'}, className='font-family-default',
-        #         ),
-        #     ], width=10),
-        # ], justify='center'),
-        #
+        dbc.Row([  # Profile text
+            dbc.Col([
+                dcc.Markdown(
+                '''
+                    #### Profile    
+                ''', style={'color':'gray'}, className='font-family-default',
+                ),
+                dcc.Markdown(
+                    '''
+                        ###### I like optimize workflows and to develop tools that make my life easier.
+
+                        ###### The following content is a more detailed description of my experience.
+                    ''', style={'color':'lightgray'}, className='font-family-default',
+                ),
+            ]),
+        ], class_name='row-offset', style={'margin-top':'4rem'}),
+        
         # dbc.Row([
         #     dbc.Col([
         #         dbc.Accordion([
