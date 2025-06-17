@@ -1,0 +1,1 @@
+string = "This string comes from my Python module."

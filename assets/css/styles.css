@@ -1,0 +1,231 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  background-color: #fff;
+  color: #000;
+}
+
+.cv-wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+/* This file contains generalized styles for app components */
+
+/* Button component */
+.style_skills_button {
+  background-color: rgb(124, 174, 156);
+  text-align: center;
+  border-style: solid;
+  width: 80%;
+  height: 6rem;
+  margin: 0px;
+  border-radius: 25px;
+  font-family: Georgia;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.style_skills_button:hover {
+  background-color: rgb(34, 82, 69);
+  font-family: Georgia;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.style_resume_header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Georgia;
+  color: lightgray;
+  background-image: linear-gradient(#147259, #022a26);
+}
+
+/* Accordion component */
+.accordion-button {
+  background-color: #325249;
+  font-family: Georgia;
+  font-size: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2c9277;
+  font-family: Georgia;
+  font-size: 18px;
+  border-bottom: solid;
+  border-color: #ffffff;
+}
+
+/* Font type */
+.font-family-default {
+  font-family: Georgia;
+}
+
+.font-weight-subtitle {
+  font-weight: bolder;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #147259;
+}
+
+/* Styling for the search bar */
+#search-bar {
+  width: 300px;
+  padding: 10px 15px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: 2px solid #007bff;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the search button */
+#search-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  border: Solid;
+  border-width: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-button:hover {
+  background-color: #147259;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  border-style: outset;
+}
+
+/* Styling for the radio button labels */
+#search-types label {
+  font-size: 18px;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  border-radius: 30px;
+  border: 2px solid #333433;
+  margin-right: 20px; /* Increased margin-right for more horizontal space */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #147259;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* When radio button is selected */
+#search-types input[type="radio"]:checked + label {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Hover effect for radio button labels */
+#search-types label:hover {
+  background-color: #358d72;
+  color: black;
+  /* box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); */
+  box-shadow: 0 4px 15px #007bff;
+}
+
+/* Style the dropdown */
+#data-extract-dropdown {
+  color: #147259;
+  font-weight: 600;
+  box-shadow: 0 4px 15px #147259;
+}
+
+/* Style for selected dropdown option text */
+#data-extract-dropdown .Select-value-label {
+  color: #147259; /* Set the color of the selected options */
+  font-weight: bold; /* Optional: make the text bold */
+}
+
+/* Styling the expand image button */
+#expand-image-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  border: Solid;
+  border-width: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#expand-image-button:hover {
+  background-color: #147259;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  border-style: outset;
+}
+
+/* Flash the button on click */
+#expand-image-button.flash {
+  animation: flash 0.5s ease;
+}
+
+/* Styling for the documentation button */
+.button-click {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #147259;
+  color: white;
+  border: Solid;
+  border-width: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-click:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  border-style: outset;
+}
+
+.button-click:active {
+  background-color: #93bea7;
+  box-shadow: 0 5px #93bea7;
+  transform: translateY(6px);
+  opacity: 0.3;
+  transition: 0s;
+}
